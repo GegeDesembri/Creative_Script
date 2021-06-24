@@ -1,0 +1,4 @@
+DHT11 Board Module
+- PIN Header Male 4pin
+- Resistor 10k
+- Sensor DHT11 1x

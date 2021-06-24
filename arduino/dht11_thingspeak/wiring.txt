@@ -1,0 +1,5 @@
+Wiring
+NodeMCU > DHT11
+GND > GND
+3V > VCC
+D1 > DATA
