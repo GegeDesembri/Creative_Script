@@ -1,0 +1,10 @@
+=======
+https://youtu.be/SDROba_M42g?t=3191
+Variable
+
+=======
+https://youtu.be/SDROba_M42g?t=3909
+var (deprecated)
+>> Recomendations
+let (dynamic)
+cons (static)
