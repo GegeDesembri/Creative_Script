@@ -1,0 +1,8 @@
+=====
+https://youtu.be/SDROba_M42g?t=4379
+- (Pengurangan)
++ (Pertambahan)
+/ (Pembagian)
+* (Perkalian)
+** (Exponensial)
+% (Sisa Bagi)
