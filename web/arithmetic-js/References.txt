@@ -1,4 +1,4 @@
-=====
+### TUTORIAL JAVASCRIPT DASAR BAHASA INDONESIA
 https://youtu.be/SDROba_M42g?t=4379
 - (Pengurangan)
 + (Pertambahan)
