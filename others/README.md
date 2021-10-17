@@ -1,3 +1,4 @@
 # References
-1. Github Markdown : https://guides.github.com/features/mastering-markdown/
-2. Markdown Preview : https://dillinger.io/
+1. VScode x Github : https://www.petanikode.com/git-vscode/ 
+2. Github Markdown : https://guides.github.com/features/mastering-markdown/
+3. Markdown Preview : https://dillinger.io/
