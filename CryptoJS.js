@@ -6,7 +6,8 @@ var CryptoJS=CryptoJS||function(t,e){var r={},n=r.lib={},i=n.Base=function(){fun
 function URLenc(filename){
 	let urlpath = window.location.href.split('?')[0]+filename;
 	let urlpath_enc = encodeURIComponent(urlpath);
-	let urlpath_aes = aesCrypto.encrypt(convertstr(urlpath_enc.val()),convertstr('privatesafelink'));
-	let monetize = "https://gescripter.blogspot.com/2019/06/antarmuka-sensor-dht11-dengan-delphi.html#?o=" + urlpath_aes;
+	let urlpath_base64 = window.btoa(urlpath_enc);
+	let safelinku_api = "2a995948f68b47401407332e100dae9e6dc2f3f2";
+	let monetize = "https://semawur.com/full?api=" + safelinku_api + "&url=" + urlpath_base64 + "&type=2";
 	window.open(monetize, "_self");
 }
