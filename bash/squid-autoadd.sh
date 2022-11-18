@@ -12,11 +12,11 @@ proxy_userpass="$1"
 /usr/bin/expect <(cat << EOF
 spawn squid-add-user
 expect "Enter Proxy username: "
-send "user$proxy_userpass\r"
+send "user_proxy$proxy_userpass\r"
 expect "New password: "
-send "user$proxy_userpass\r"
+send "user_proxy$proxy_userpass\r"
 expect "Re-type new password: "
-send "user$proxy_userpass\r"
+send "user_proxy$proxy_userpass\r"
 interact
 EOF
 )
