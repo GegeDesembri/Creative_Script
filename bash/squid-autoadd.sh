@@ -12,25 +12,26 @@ proxy_userpass="$1"
 /usr/bin/expect <(cat << EOF
 spawn squid-add-user
 expect "Enter Proxy username: "
-send "user_proxy$proxy_userpass\r"
+send "${proxy_userpass}\r"
 expect "New password: "
-send "user_proxy$proxy_userpass\r"
+send "${proxy_userpass}\r"
 expect "Re-type new password: "
-send "user_proxy$proxy_userpass\r"
+send "${proxy_userpass}\r"
 interact
 EOF
 )
 }
 
 function loop_range(){
-	range_min="$1"
-	range_max="$2"
+	user_prefix="$1"
+	range_min="$2"
+	range_max="$3"
 	
 	for USERPASS in $(eval echo "{$range_min..$range_max}"); do
-		autocreate "proxyuser${USERPASS}"
-		echo "proxyuser${USERPASS}" | tee -a /root/squid_generated.txt
+		autocreate "${user_prefix}${USERPASS}"
+		echo "${user_prefix}${USERPASS}" | tee -a /root/squid_generated.txt
 		sleep 0.5
 	done
 }
 
-loop_range $1 $2
+loop_range $1 $2 $3
