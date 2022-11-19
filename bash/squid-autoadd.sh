@@ -8,9 +8,10 @@ clear
 echo -e "See account list /root/squid_generated.txt"
 
 function autocreate(){
-proxy_userpass="$1"
+squid_add_user="$1"
+proxy_userpass="$2"
 /usr/bin/expect <(cat << EOF
-spawn squid-add-user
+spawn ${squid_add_user}
 expect "Enter Proxy username: "
 send "${proxy_userpass}\r"
 expect "New password: "
