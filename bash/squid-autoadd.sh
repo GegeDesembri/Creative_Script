@@ -33,7 +33,7 @@ function loop_range(){
 		spawn_bin="/usr/local/bin/squid-add-user"
 	else
 		if [[ $(cat /etc/squid/squid.conf | grep -wce "^include ")  == 0 ]]; then
-			echo -e 'include /etc/squid/conf.d/*.conf' >> /etc/squid/squid.conf
+			echo -e "\ninclude /etc/squid/conf.d/*.conf" >> /etc/squid/squid.conf
 		fi
 		default_port="$(cat /etc/squid/squid.conf | grep "http_port" | cut -d ' ' -f 2)"
 		conf_perport="/etc/squid/conf.d/${port_use}.conf"
